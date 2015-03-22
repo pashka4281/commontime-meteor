@@ -1,0 +1,48 @@
+body{ padding: 0; margin: 0; font-family: 'Open Sans'; background: #282828; color: #8d8d8d; }
+
+*{ box-sizing: border-box; }
+
+#myTime, #clientTime{ text-align: center; color: #8d8d8d; flex: 1 0px; padding: 0 25px; }
+.chartWrap{ width: 500px; }
+#chart { border-radius: 500px; box-shadow: 0px 0px 16px #1D1D1D; -webkit-box-shadow: 0px 0px 16px #1D1D1D; }
+#wrapper{ padding: 0 40px; }
+.zoneSelector{ display: block; margin: 10px auto; width: 100%; }
+#main{ display: flex; }
+
+#myTime img, #clientTime img{ border: 8px solid; border-radius: 500px; height: 128px; width: 128px; }
+#myTime img{ border-color: #FEED00; background: #235E1C; }
+#clientTime img{ border-color: #00BE32; background: #66001F; }
+/*input{ margin-bottom: 4px; display: block; width: 100%; }*/
+label{ text-align: left; display: block; font-size: 12px; }
+select[name="am_pm_switch"]{ display: block; margin: 10px auto 25px; }
+footer{ font-family: sans-serif; }
+footer a{ color: #D8D8D8; }
+footer #instruction{ padding: 20px; background-color: #0c0907;  border: 5px solid #5f5f5f;  }
+footer .center-text{ text-align: center; font-size: 12px; }
+#hoursFormatSelectorWrapper{ text-align: center; padding: 15px 0; }
+
+/*
+input[type="email"]{ box-sizing: border-box; outline: none; background: #8d8d8d; border: 1px solid #0c0907; padding: 4px; }
+input[type="email"]:focus{ background: #E4E4E4; }
+*/
+
+.mb10{ margin-bottom: 10px; }
+h1 sup{ font-size: 11px; }
+
+.fancy-container{
+  padding: 40px;
+  border: 10px solid #CBCBCB;
+  border-radius: 10px;
+  background: #3A3A3A;
+  -webkit-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
+-moz-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
+box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
+}
+
+a{ color: #3b8bba; text-decoration: none; }
+
+#authentication-forms-wrapper{ margin-top: 35px; }
+#authentication-forms-wrapper h2{ margin-top: 0;}
+
+.main-menu{ padding: 7px;  background: #474747; }
+.main-menu img{ vertical-align: middle; }
