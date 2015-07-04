@@ -1,3 +1,7 @@
+Template.AuthenticationForms.rendered = function(){
+  particlesJS.load('particles-js', '/scripts/particles.json', function(){})
+}
+
 Template.AuthenticationForms.events({
   'submit #login-form' : function(e, t){
     e.preventDefault();

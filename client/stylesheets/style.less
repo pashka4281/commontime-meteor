@@ -1,5 +1,29 @@
-body{ padding: 0; margin: 0; font-family: 'Open Sans'; background: #282828; color: #8d8d8d; }
+html {
+  overflow-y: scroll;
+  //.custom-scroll(transparent, rgba(255, 255, 255, 0.05), 3px);
+  height: 100%;
+  &.noscroll {
+    overflow: hidden;
+  }
+}
 
+body {
+  font-family: "Roboto", "HelveticaNeue-Light", "sans-serif";
+  font-size: 14px;
+  color: #8d8d8d;
+  height: 100%;
+  width: 100%;
+  // min-width: 768px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1rem;
+  padding: 0;
+  overflow: visible;
+  position: relative;
+  background-color: white;
+  margin: 0;
+}
+
+/*background: #282828;*/
 *{ box-sizing: border-box; }
 
 #myTime, #clientTime{ text-align: center; color: #8d8d8d; flex: 1 0px; padding: 0 25px; }
@@ -35,8 +59,8 @@ h1 sup{ font-size: 11px; }
   border-radius: 10px;
   background: #3A3A3A;
   -webkit-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
--moz-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
+  box-shadow: 15px 17px 38px 0px rgba(0,0,0,1);
 }
 
 a{ color: #3b8bba; text-decoration: none; }
@@ -46,3 +70,47 @@ a{ color: #3b8bba; text-decoration: none; }
 
 .main-menu{ padding: 7px;  background: #474747; }
 .main-menu img{ vertical-align: middle; }
+
+section.landing-page{
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+}
+
+.login-card{
+  width: 90%;
+  max-width: 520px;
+  padding: 22px 30px 30px;
+  margin: 25px auto;
+  background-color: #FAFAFA;
+  box-shadow: 0 0 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+
+  h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    color: #444444;
+    text-align: center;
+  }
+
+  .input-text{ margin: 0 0 14px 0; }
+  input[type="text"],input[type="password"],input[type=email]{
+    box-shadow: 0 0 0;
+    background-color: transparent;
+    border-width: 0;
+    position: relative;
+    padding: 4px 8px;
+    font-size: 22px;
+    border-bottom: 1px solid #DFDFDF;
+    font-family: "Roboto", "HelveticaNeue-Light", "sans-serif";
+    font-weight: 300;
+    width: 100%;
+    line-height: 24px;
+  }
+}
