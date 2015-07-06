@@ -34,11 +34,11 @@ Template.AuthenticationForms.events({
   'submit #register-form' : function(e, t) {
     e.preventDefault();
     var email = t.find('#register-form input[type="email"]').value
+      , name = t.find('#register-form input[name="name"]').value
       , password = t.find('#register-form input[type="password"]').value;
 
       // Trim and validate the input
-
-    Accounts.createUser({email: email, password : password}, function(err){
+    Accounts.createUser({email: email, password: password, profile: {name: name}}, function(err){
         if (err) {
           alert("Error!")
           // Inform the user that account creation failed

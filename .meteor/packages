@@ -10,3 +10,5 @@ insecure
 accounts-base
 accounts-password
 less
+coffeescript
+materialize:materialize

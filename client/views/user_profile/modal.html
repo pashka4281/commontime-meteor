@@ -1,0 +1,29 @@
+<template name="profileModal">
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+
+      <form action="/">
+        <div class="input-field col s12">
+          <select>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+        <div class="text-input"> 
+          <input type="text" name="name" value="{{currentUser.profile.name}}">
+        </div>
+
+      </form>
+    </div>
+
+    <div class="modal-footer">
+      <a class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+</template>
+

@@ -4,49 +4,14 @@
 </head>
 
 <body>
-  
-    {{# if currentUser }}
-      {{> MainMenu }}
+  {{# if currentUser }}
+    {{> MainMenu }}
+    {{> profileModal }}
 
-      <div id="wrapper">
-        <div id="main">
-          <div id="myTime">
-            <h2>Worker</h2>
-            <img src="freelancer.png" default-src="freelancer.png">
-            <select class="zoneSelector" name="myTime"></select>
-            <input type="email" placeholder="Enter email" />
-          </div>
-
-          <div id="clientTime">
-            <h2>Client</h2>
-            <img src="client.png" default-src="client.png">
-            <select class="zoneSelector" name="clientTime"></select>
-            <input type="email" placeholder="Enter email" />
-          </div>
-
-          {{> chart }}
-
-        </div>
-
-        <footer>
-          
-          <div id="instruction" class="mb10">
-            <h3>Instructions</h3>
-            To adjust freelancer's and client's working hours resize colored curves by dragging knobs (small circles) at their ends.
-            Email is used to load your gravatar.
-            Each activity i.e. updating emails, changing timezone or time format (12/24) will be immediately reflected in url.
-            The url then can be used to share current state of the timer to client and vice versa.
-          </div>
-
-          <div class="center-text mb10">
-            Crafted by <a href="http://pashka4281.github.io/about/" target="_blank">Pavlo Sirous</a> with ♥ in Ukraine.
-          </div>
-          <div class="center-text mb10">2015</div>
-        </footer>
-
-      </div>
-    {{ else }}
-      {{> AuthenticationForms }}
-    {{/if }}
-
+    <div id="main">
+      {{> chart }}
+    </div>
+  {{ else }}
+    {{> AuthenticationForms }}
+  {{/if }}
 </body>

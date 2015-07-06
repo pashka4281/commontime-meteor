@@ -1,0 +1,20 @@
+<template name="MainMenu">
+
+<aside class="side-nav">
+  <header>{{> userStatus }}</header>
+
+  <ul class="pure-menu-list">
+    <li class=""><a href="#" class="pure-menu-link logout">Logout</a></li>
+    <li class="">
+      <a href="#profileModal" class="modal-trigger">Profile</a>
+    </li>
+  </ul>
+  <div class="input-field col s12">
+    <select name="am_pm_switch">
+      <option value="24" selected>24 hours format</option>
+      <option value="12">12 hours format</option>
+    </select>
+  </div>
+</aside>
+
+</template>
